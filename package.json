@@ -6,21 +6,48 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "postinstall": "prisma generate"
   },
   "dependencies": {
+    "@ai-sdk/openai": "^0.0.50",
+    "@clerk/nextjs": "^5.3.1",
+    "@clerk/themes": "^2.1.20",
+    "@hookform/resolvers": "^3.9.0",
+    "@pinecone-database/pinecone": "^3.0.0",
+    "@prisma/client": "^5.18.0",
+    "@qdrant/js-client-rest": "^1.11.0",
+    "@radix-ui/react-dialog": "^1.1.1",
+    "@radix-ui/react-label": "^2.1.0",
+    "@radix-ui/react-slot": "^1.1.0",
+    "@tsparticles/react": "^3.0.0",
+    "ai": "^3.3.14",
+    "class-variance-authority": "^0.7.0",
+    "clsx": "^2.1.1",
+    "eslint-config-prettier": "^9.1.0",
+    "lucide-react": "^0.428.0",
+    "next": "14.2.5",
+    "next-themes": "^0.3.0",
+    "openai": "^4.56.0",
+    "prisma": "^5.18.0",
     "react": "^18",
     "react-dom": "^18",
-    "next": "14.2.5"
+    "react-hook-form": "^7.52.2",
+    "sharp": "^0.33.5",
+    "tailwind-merge": "^2.5.2",
+    "tailwindcss-animate": "^1.0.7",
+    "zod": "^3.23.8"
   },
   "devDependencies": {
-    "typescript": "^5",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
-    "postcss": "^8",
-    "tailwindcss": "^3.4.1",
     "eslint": "^8",
-    "eslint-config-next": "14.2.5"
+    "eslint-config-next": "14.2.5",
+    "postcss": "^8",
+    "prettier": "^3.3.3",
+    "prettier-plugin-tailwindcss": "^0.6.6",
+    "tailwindcss": "^3.4.10",
+    "typescript": "^5"
   }
 }
